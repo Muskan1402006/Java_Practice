@@ -3,3 +3,7 @@ public class Main {
         System.out.print("hello muskan u are a lier");
     }
 }
+//first program
+/*
+*comments
+* */
