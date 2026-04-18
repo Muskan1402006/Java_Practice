@@ -4,6 +4,3 @@ public class Main {
     }
 }
 //first program
-/*
-*comments
-* */
