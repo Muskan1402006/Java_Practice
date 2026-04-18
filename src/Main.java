@@ -16,7 +16,12 @@ public class Main {
         //char-2
         //boolean- 1 true/false
 
-        
-    }
+        byte agem =30;
+        int phone=12233;
+        long phone2=2121212343337675L;
+        float pi = 3.14F;
+        char letter= '@';
+        boolean isAdult= true;
 
-}
+
+}}
