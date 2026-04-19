@@ -23,5 +23,5 @@ public class Main {
         char letter= '@';
         boolean isAdult= true;
 
-
+//JUST FOR A CONTRIBUTION
 }}
