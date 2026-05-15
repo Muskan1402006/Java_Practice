@@ -4,7 +4,7 @@ public class Main {
     //variables
         String name="muskan";
         int age=20;
-        String neighbour ="megha";
+        String neighbour ="Megha";
         String friend= neighbour;
 
         //byte- 1[-128 to 127]
