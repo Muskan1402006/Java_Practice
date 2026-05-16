@@ -174,3 +174,100 @@ JDK (Java Development Kit) = JRE + development tools like compiler and debugger.
 - JDK is needed for development
 - JVM provides platform independence
 - Java has different editions for different purposes
+
+# ☕ Day 3 – Java Variables & Data Types | Identifiers, Literals, Keywords
+
+## 🎯 Goal of Day 3
+- Understand variables in Java
+- Learn data types (primitive and non-primitive)
+- Know the rules for identifiers
+- Understand literals and keywords
+
+---
+
+## 📦 What is a Variable?
+
+A variable is a container that stores data in memory.
+
+Example:
+int age = 20;
+
+Here, `int` is the data type, `age` is the variable name, and `20` is the value stored.
+
+---
+
+## 🧮 Java Data Types
+
+Java data types are divided into two categories.
+
+### 1) Primitive Data Types
+
+| Data Type | Size | Example | Description |
+|-----------|------|---------|-------------|
+| byte | 1 byte | byte b = 10; | Small integer |
+| short | 2 bytes | short s = 200; | Short integer |
+| int | 4 bytes | int x = 5000; | Integer number |
+| long | 8 bytes | long l = 100000L; | Large integer |
+| float | 4 bytes | float f = 5.5f; | Decimal number |
+| double | 8 bytes | double d = 10.99; | Large decimal |
+| char | 2 bytes | char c = 'A'; | Single character |
+| boolean | 1 bit | boolean b = true; | True/False |
+
+### 2) Non-Primitive Data Types
+String, Array, Class, Object, Interface
+
+Example:
+String name = "Muskan";
+
+---
+
+## 🏷️ Identifiers in Java
+
+Identifiers are the names given to variables, classes, methods, etc.
+
+Rules for identifiers:
+- Can contain letters, digits, underscore (_) and dollar sign ($)
+- Cannot start with a digit
+- Cannot use Java keywords
+- Case-sensitive
+- Should be meaningful names
+
+Valid examples:
+int marks;
+String studentName;
+
+Invalid examples:
+int 1marks;
+int class;
+
+---
+
+## 🔤 Literals in Java
+
+Literals are the fixed values assigned to variables.
+
+| Literal Type | Example |
+|--------------|---------|
+| Integer Literal | 10, 200 |
+| Floating Literal | 10.5, 5.5f |
+| Character Literal | 'A' |
+| String Literal | "Hello" |
+| Boolean Literal | true, false |
+
+---
+
+## 🔑 Java Keywords
+
+Keywords are reserved words that have special meaning in Java such as:
+int, float, if, else, while, for, class, public, static, void, return
+
+These cannot be used as identifiers.
+
+---
+
+## 🧾 Key Takeaways
+- Variables store data in memory
+- Java has primitive and non-primitive data types
+- Identifiers must follow naming rules
+- Literals are fixed values
+- Keywords are reserved words in Java
