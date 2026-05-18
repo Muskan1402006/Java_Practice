@@ -271,3 +271,90 @@ These cannot be used as identifiers.
 - Identifiers must follow naming rules
 - Literals are fixed values
 - Keywords are reserved words in Java
+# ☕ Day 4 – How Java Stores Negative Numbers & Floating Point Numbers
+
+## 🎯 Goal of Day 4
+- Understand how Java stores negative numbers in memory
+- Learn how floating point (decimal) numbers are represented
+- Know about Two’s Complement and IEEE 754 format
+
+---
+
+## ➖ How Java Stores Negative Numbers (Two’s Complement)
+
+Java stores negative integers using a method called **Two’s Complement**.
+
+Steps to store a negative number (example: -5):
+
+1. Write the binary of +5  
+   5 = `00000101`  (8-bit representation)
+
+2. Take One’s Complement (invert bits)  
+   `11111010`
+
+3. Add 1  
+   `11111010 + 1 = 11111011`
+
+So, **-5 is stored as `11111011`** in memory.
+
+### Why Two’s Complement?
+- Makes addition and subtraction easier for the CPU
+- Only one representation of zero
+- Efficient for arithmetic operations
+
+---
+
+## 🧮 Integer Storage in Java
+
+Java integer types (`byte`, `short`, `int`, `long`) all use Two’s Complement.
+
+| Data Type | Size | Range |
+|-----------|------|-------|
+| byte | 1 byte | -128 to 127 |
+| short | 2 bytes | -32,768 to 32,767 |
+| int | 4 bytes | -2³¹ to 2³¹-1 |
+| long | 8 bytes | -2⁶³ to 2⁶³-1 |
+
+---
+
+## 🌊 How Java Stores Floating Point Numbers (IEEE 754)
+
+Java stores `float` and `double` using the **IEEE 754 standard**.
+
+A floating point number is divided into 3 parts:
+
+| Part | Purpose |
+|------|---------|
+| Sign bit | Represents positive or negative |
+| Exponent | Represents the range |
+| Mantissa (Fraction) | Represents precision value |
+
+### For `float` (32 bits)
+- 1 bit → Sign
+- 8 bits → Exponent
+- 23 bits → Mantissa
+
+### For `double` (64 bits)
+- 1 bit → Sign
+- 11 bits → Exponent
+- 52 bits → Mantissa
+
+---
+
+## ✍️ Example: Storing -10.5 in Float
+
+- Sign bit = 1 (negative)
+- Convert 10.5 to binary = `1010.1`
+- Normalize and store using exponent and mantissa fields
+
+This is automatically handled by Java using IEEE 754 format.
+
+---
+
+## 🧾 Key Takeaways
+
+- Negative integers are stored using **Two’s Complement**
+- Floating point numbers are stored using **IEEE 754**
+- `int`, `short`, `byte`, `long` use Two’s Complement
+- `float` and `double` use Sign, Exponent, and Mantissa
+- This allows Java to perform fast and accurate calculations
