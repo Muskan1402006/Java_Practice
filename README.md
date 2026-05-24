@@ -358,3 +358,130 @@ This is automatically handled by Java using IEEE 754 format.
 - `int`, `short`, `byte`, `long` use Two’s Complement
 - `float` and `double` use Sign, Exponent, and Mantissa
 - This allows Java to perform fast and accurate calculations
+# ☕ Day 5 – Java Type Conversions, Type Promotions & Casting
+
+## 🎯 Goal of Day 5
+- Understand type conversion in Java
+- Learn implicit and explicit casting
+- Understand type promotion in expressions
+- Learn data loss during conversion
+
+---
+
+## 🔄 What is Type Conversion?
+
+Type conversion means converting one data type into another.
+
+Example:
+int x = 10;
+double y = x;
+
+Here, `int` is automatically converted into `double`.
+
+---
+
+## ✅ Implicit Type Conversion (Widening)
+
+Also called **Automatic Type Conversion**.
+
+Smaller data type is converted into a larger data type automatically.
+
+### Conversion Flow
+byte → short → int → long → float → double
+
+Example:
+int num = 100;
+double data = num;
+
+System.out.println(data);
+
+Output:
+100.0
+
+### Why Widening is Safe?
+Because larger data types can store smaller values without data loss.
+
+---
+
+## ⚠️ Explicit Type Conversion (Narrowing)
+
+Also called **Type Casting**.
+
+Larger data type is manually converted into a smaller data type.
+
+Example:
+double num = 99.99;
+int data = (int) num;
+
+System.out.println(data);
+
+Output:
+99
+
+### Important Point
+Decimal part is removed during narrowing conversion.
+
+---
+
+## 🎭 Type Casting in Java
+
+Type casting means manually converting one data type into another.
+
+Syntax:
+(targetDataType) value
+
+Example:
+float marks = 95.5f;
+int result = (int) marks;
+
+System.out.println(result);
+
+Output:
+95
+
+---
+
+## 🚀 Type Promotion in Java
+
+During expressions, Java automatically promotes smaller data types into larger types.
+
+Example:
+byte a = 10;
+byte b = 20;
+
+int result = a + b;
+
+Here, `a` and `b` are promoted to `int` before addition.
+
+---
+
+## 📌 Rules of Type Promotion
+- byte, short, and char are promoted to int
+- If one operand is long, result becomes long
+- If one operand is float, result becomes float
+- If one operand is double, result becomes double
+
+---
+
+## ⚠️ Data Loss in Type Casting
+
+Example:
+int number = 130;
+byte data = (byte) number;
+
+System.out.println(data);
+
+Output:
+-126
+
+Reason:
+`byte` range is only from -128 to 127.
+
+---
+
+## 🧾 Key Takeaways
+- Type conversion changes one data type into another
+- Widening conversion is automatic and safe
+- Narrowing conversion requires explicit casting
+- Type promotion occurs automatically in expressions
+- Improper casting can cause data loss
