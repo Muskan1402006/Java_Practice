@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-       byte x = 10;
-byte y = 20;
-int z = x + y; // ERROR
-System.out.println(z);
+      byte b=40;
+      int i;
+      i=b;
+      System.out.println(b);
 
 
     }
