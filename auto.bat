@@ -7,7 +7,8 @@ git diff --cached --quiet
 if %errorlevel%==0 (
     echo No changes to commit
 ) else (
-    git commit -m "auto practice commit"
+    set /p msg=Enter commit message: 
+    git commit -m "%msg%"
     git push
 )
 
