@@ -485,3 +485,207 @@ Reason:
 - Narrowing conversion requires explicit casting
 - Type promotion occurs automatically in expressions
 - Improper casting can cause data loss
+# ☕ Day 6 – Java Operators & Conditional Statements
+
+## 🎯 Goal of Day 6
+- Understand different types of operators in Java
+- Learn conditional statements
+- Write decision-making programs using conditions
+
+---
+
+## ➕ Java Operators
+
+Operators are symbols used to perform operations on variables and values.
+
+---
+
+## 1️⃣ Arithmetic Operators
+
+Used for mathematical operations.
+
+| Operator | Meaning | Example |
+|----------|---------|---------|
+| + | Addition | a + b |
+| - | Subtraction | a - b |
+| * | Multiplication | a * b |
+| / | Division | a / b |
+| % | Modulus | a % b |
+
+Example:
+int a = 10;
+int b = 5;
+
+System.out.println(a + b);
+System.out.println(a - b);
+System.out.println(a * b);
+System.out.println(a / b);
+
+---
+
+## 2️⃣ Relational Operators
+
+Used to compare values.
+
+| Operator | Meaning |
+|----------|---------|
+| == | Equal to |
+| != | Not equal to |
+| > | Greater than |
+| < | Less than |
+| >= | Greater than or equal to |
+| <= | Less than or equal to |
+
+Example:
+int a = 10;
+int b = 20;
+
+System.out.println(a < b);
+
+---
+
+## 3️⃣ Logical Operators
+
+Used to combine conditions.
+
+| Operator | Meaning |
+|----------|---------|
+| && | Logical AND |
+| \|\| | Logical OR |
+| ! | Logical NOT |
+
+Example:
+int age = 20;
+
+System.out.println(age > 18 && age < 30);
+
+---
+
+## 4️⃣ Assignment Operators
+
+Used to assign values.
+
+| Operator | Example |
+|----------|---------|
+| = | x = 5 |
+| += | x += 2 |
+| -= | x -= 2 |
+| *= | x *= 2 |
+| /= | x /= 2 |
+
+---
+
+## 5️⃣ Unary Operators
+
+Operate on a single operand.
+
+| Operator | Meaning |
+|----------|---------|
+| ++ | Increment |
+| -- | Decrement |
+
+Example:
+int x = 5;
+x++;
+
+System.out.println(x);
+
+---
+
+## 🌿 Conditional Statements in Java
+
+Conditional statements help in decision making.
+
+---
+
+## 1️⃣ if Statement
+
+Executes code if condition is true.
+
+Example:
+int age = 18;
+
+if(age >= 18){
+    System.out.println("Eligible to vote");
+}
+
+---
+
+## 2️⃣ if-else Statement
+
+Executes one block if condition is true and another if false.
+
+Example:
+int number = 5;
+
+if(number % 2 == 0){
+    System.out.println("Even Number");
+}else{
+    System.out.println("Odd Number");
+}
+
+---
+
+## 3️⃣ else-if Ladder
+
+Used for multiple conditions.
+
+Example:
+int marks = 85;
+
+if(marks >= 90){
+    System.out.println("Grade A");
+}
+else if(marks >= 75){
+    System.out.println("Grade B");
+}
+else{
+    System.out.println("Grade C");
+}
+
+---
+
+## 4️⃣ Nested if
+
+An if statement inside another if statement.
+
+Example:
+int age = 20;
+boolean hasID = true;
+
+if(age >= 18){
+    if(hasID){
+        System.out.println("Entry Allowed");
+    }
+}
+
+---
+
+## 5️⃣ switch Statement
+
+Used when there are multiple choices.
+
+Example:
+int day = 2;
+
+switch(day){
+    case 1:
+        System.out.println("Monday");
+        break;
+
+    case 2:
+        System.out.println("Tuesday");
+        break;
+
+    default:
+        System.out.println("Invalid Day");
+}
+
+---
+
+## 🧾 Key Takeaways
+- Operators perform operations on data
+- Arithmetic operators are used for calculations
+- Relational and logical operators are used in conditions
+- Conditional statements help in decision making
+- switch is useful for multiple options
